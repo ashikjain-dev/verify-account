@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Muli&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Muli", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  text-align: center;
+  background-color: #fbfcfe;
+}
+
+.container {
+  border: 3px solid #333;
+  max-width: 1200px;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.31);
+  padding: 30px;
+  background-color: #fff;
+}
+
+.code-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px 0;
+}
+.codes {
+  height: 80px;
+  margin: 1%;
+  font-size: 80px;
+  border-radius: 5px;
+  border: 1px solid #eee;
+  height: 120px;
+  width: 100px;
+  text-align: center;
+  font-weight: 300;
+}
+.codes:valid {
+  border-color: #3498db;
+  box-shadow: inset 0px 2px 20px 0px rgba(0, 0, 0, 0.2);
+}
+.codes:focus {
+  outline-color: #3498db;
+}
+
+.info {
+  background-color: #eaeaea;
+  color: #777;
+  margin-top: 20px;
+  display: inline-block;
+  max-width: 400px;
+  padding: 5px 0;
+  line-height: 20px;
+  border-radius: 5px;
+}
+
+/*to remove default up and down button from input number field*/
+.codes::-webkit-inner-spin-button,
+.codes::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .code-container {
+    flex-wrap: wrap;
+    max-width: 400px;
+  }
+  .codes {
+    font-size: 30px;
+    height: 50px;
+  }
+}
